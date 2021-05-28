@@ -70,6 +70,7 @@ namespace itis {
       if(pair.first == key){
         auto value = pair.second;
         buckets_[index].remove(pair);
+        num_keys_--;
         return value;
       }
     }
